@@ -8,13 +8,13 @@ let Tlist_Use_Right_Window=1 " 在右边显示taglist窗口
 let Tlist_Sort_Type="name"   " tag按名字排序
 
 set nocompatible            " 关闭 vi 兼容模式
-syntax on                   " 自动语法高亮
 set number                  " 显示行号
+set t_Co=256				"设置vim为256色。设置终端为256色：export TERM=xterm-256color
 colorscheme molokai          " 设定配色方案，在~/.vim文件夹下面新建colors文件夹，然后把color.vim复制到这个文件夹下面
 
-"set ruler                   " 打开状态栏标尺
-"set laststatus=2            " 显示状态栏 (默认值为 1, 当前行号和列号和操作模式显示在最后一行)
-"set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\
+set ruler                   " 打开状态栏标尺
+set laststatus=2            " 显示状态栏 (默认值为 1, 当前行号和列号和操作模式显示在最后一行)
+set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\
                             " 设置在状态行显示的信息
 
 set tabstop=4               " 设定 tab 所等同的空格长度为 4
