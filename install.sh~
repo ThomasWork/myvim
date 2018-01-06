@@ -1,5 +1,20 @@
 #!/bin/bash
 #不能使用pwd，它返回的是执行命令（的窗口）时所在的路径
 #dirname $0，返回当前执行脚本的父目录
+
+if [ -f ~/.vimrc ]; then
+	echo ".vimrc exits"
+
+if [ -f ~/.vimrc ]; then
+	echo ".vimrc renamed to .vimrc.bak"
+	mv ~/.vimrc ~/.vimrc.bak
+fi
+
+if [ -d ~/.vim ]; then
+	echo ".vim renamed to .vim.bak"
+	mv ~/.vim ~/.vim.bak
+fi
+
 bashPath=$(cd `dirname $0`; pwd)
 ln -s $bashPath ~/.vim
+ln -s $bashPath/.vimrc ~/.vimrc
