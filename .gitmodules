@@ -1,9 +1,6 @@
 [submodule "auto-pairs"]
 	path = bundle/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
-[submodule "minibufexplorer"]
-	path = bundle/minibufexplorer
-	url = https://github.com/ThomasWork/myvim.git
 [submodule "nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
