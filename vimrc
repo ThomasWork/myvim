@@ -1,7 +1,19 @@
-execute pathogen#infect()
-syntax on
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" 常用的命令
+" :PluginList       - 列出所有已配置的插件
+" :PluginInstall     - 安装插件,追加 `!` 用以更新或使用 :PluginUpdate
+" :PluginSearch foo - 搜索 foo ; 追加 `!` 清除本地缓存
+" :PluginClean      - 清除未使用插件,需要确认; 追加 `!` 自动批准移除未使用插件
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
+call vundle#end()
 filetype plugin indent on
 
+syntax on
 let Tlist_Show_One_File=1    " 只展示一个文件的taglist
 let Tlist_Exit_OnlyWindow=1  " 当taglist是最后一个窗口时自动退出
 let Tlist_Use_Right_Window=1 " 在右边显示taglist窗口

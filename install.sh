@@ -24,4 +24,4 @@ fi
 
 bashPath=$(cd `dirname $0`; pwd)
 ln -s $bashPath ~/.vim
-ln -s $bashPath/.vimrc ~/.vimrc
+ln -s $bashPath/vimrc ~/.vimrc

@@ -1,0 +1,1 @@
+/home/thomas/桌面/myvim
