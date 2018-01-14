@@ -7,8 +7,8 @@ type Student struct {
 	name string
 }
 
-func (*Student) sing(lyrics string) {
-	fmt.Printf("student: %s sing: %s\n", name, lyrics)
+func (student *Student) sing(lyrics string) {
+	fmt.Printf("student: %s sing: %s\n", student.name, lyrics)
 }
 
 func main() {
@@ -16,4 +16,6 @@ func main() {
 	fmt.Print("heeh")
 	fmt.Printf("Good Morning!")
 	s := Student{10, "Tom"}
+	s.sing("hehehah")
+
 }
