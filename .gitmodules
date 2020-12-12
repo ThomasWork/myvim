@@ -10,3 +10,11 @@
 [submodule "tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git 
+
+[submodule "gotags"]
+	path = bundle/gotags
+	url = https://github.com/jstemmer/gotags.git
+
