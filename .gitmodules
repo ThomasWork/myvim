@@ -18,3 +18,11 @@
 	path = bundle/gotags
 	url = https://github.com/jstemmer/gotags.git
 
+[submodule "gocode"]
+	path = bundle/gocode
+	url = https://github.com/nsf/gocode.git
+
+[submodule "vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
+
